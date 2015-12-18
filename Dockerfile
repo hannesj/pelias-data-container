@@ -38,7 +38,7 @@ RUN curl -sS -O http://quattroshapes.mapzen.com/quattroshapes/alpha3/FIN.tgz \
   && SHAPE_ENCODING="ISO-8859-1" ogr2ogr qs_adm0.shp FIN/FIN_admin0.shp -lco ENCODING=UTF-8 \
   && SHAPE_ENCODING="ISO-8859-1" ogr2ogr qs_adm1.shp FIN/FIN_admin1.shp -lco ENCODING=UTF-8 \
   && SHAPE_ENCODING="ISO-8859-1" ogr2ogr qs_adm2.shp FIN/FIN_admin2.shp -lco ENCODING=UTF-8 \
-  && SHAPE_ENCODING="ISO-8859-1" ogr2ogr qs_localadmin.shp FIN/FIN_localadmin.shp -lco ENCODI G=UTF-8 \
+  && SHAPE_ENCODING="ISO-8859-1" ogr2ogr qs_localadmin.shp FIN/FIN_localadmin.shp -lco ENCODIG=UTF-8 \
   && rm -rf FIN
 
 # Download Finnish municipalities and convert these to quattroshapes format
